@@ -1,0 +1,42 @@
+{
+  "name": "slidev-theme-portable",
+  "version": "0.1.0",
+  "description": "Slidev theme encoding Portable's hyper-chromatic brand system",
+  "type": "module",
+  "private": true,
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "scripts": {
+    "dev": "slidev slides.md --open",
+    "build": "slidev build slides.md",
+    "export": "slidev export slides.md",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "slidev": ">=v0.47.0"
+  },
+  "slidev": {
+    "defaults": {
+      "fonts": {
+        "sans": "Inter Display,Inter",
+        "serif": "Inter Display,Inter",
+        "mono": "Roboto Mono",
+        "local": "Inter Display,Inter",
+        "weights": "400,500,600,700"
+      }
+    }
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.14.1",
+    "@slidev/theme-default": "^0.25.0",
+    "@slidev/theme-seriph": "^0.25.0",
+    "flubber": "^0.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "vitest": "^4.0.18"
+  }
+}
