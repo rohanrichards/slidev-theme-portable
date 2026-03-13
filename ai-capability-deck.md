@@ -1,14 +1,17 @@
 ---
 theme: .
 title: "AI with Portable"
----
-
----
 layout: hero
 scheme: blue
 from: organic-2
 to: organic-3
 ---
+
+<style>
+.hero-text :deep(h1), .hero-text :deep(h2) {
+  font-size: 4rem;
+}
+</style>
 
 # AI is now
 ## infrastructure
