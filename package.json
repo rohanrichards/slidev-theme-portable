@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "dev": "slidev slides.md --open",
+    "dev:ai": "slidev ai-capability-deck.md --open",
     "build": "slidev build slides.md",
     "export": "slidev export slides.md",
     "test": "vitest run",
