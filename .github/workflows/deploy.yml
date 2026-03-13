@@ -43,8 +43,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
-        run: npm run build -- --base /${{ github.event.repository.name }}/
+      - name: Build each deck
+        run: |
+          BASE=/${{ github.event.repository.name }}
+          npx slidev build slides.md --base $BASE/ --out dist
+          npx slidev build ai-capability-deck.md --base $BASE/ai-capability-deck/ --out dist/ai-capability-deck
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
